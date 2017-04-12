@@ -1,0 +1,12 @@
+--SELECT * FROM USERS WHERE CODE = '00051380'
+SELECT * FROM Customer_product_lists WHERE CODE = 'MM09'
+SELECT * FROM CUSTOMER_PROD_LIST_ITEMS WHERE Customer_Product_List_ID = 192
+SELECT TOP 1000 * FROM SAPSalesOrgProduct WHERE SalesOrg = 'MM09';
+
+SELECT * FROM SAPPRODUCT  WHERE ProductID = '1085HDC'
+/*
+SELECT * FROM ORganization 
+
+SELECT * FROM Customer_product_lists
+
+SELECT * FROM sapSalesOrg*/

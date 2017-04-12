@@ -1,0 +1,2 @@
+SELECT * FROM Biz_UserDailyKPI WHERE USERID = 1947 AND date = '21Jun16'
+UPDATE Biz_UserDailyKPI SET TimeSpent = 1.05, LastUPdate = GETDATE() WHERE USERID = 1947 AND date = '21Jun16'

@@ -1,0 +1,1 @@
+EXEC [SP_Calc_Confirm_Promo_Vietnam] '121831608181741540', '80', '105'

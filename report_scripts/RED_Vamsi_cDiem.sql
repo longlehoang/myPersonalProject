@@ -1,0 +1,2 @@
+SELECT DISTINCT ts.LastUPdateBY SRCode, c.Code, c.Name  FROM Trans_MeasureTransactionSummary ts JOIN Customers c ON ts.customerID = c.id WHERE USERID IN (1317,1994) AND MeasureProfileID IN (19,21)
+SELECT ts.LastUPdateBY SRCode, c.Code, c.Name, ts.* FROM Trans_MeasureTransactionSummary ts JOIN Customers c ON ts.customerID = c.id WHERE USERID IN (1317,1994) AND MeasureProfileID IN (19,21)

@@ -1,0 +1,9 @@
+SELECT * FROM USERS WHERE CODE = '00052860'
+
+SELECT * FROM Biz_UserDailyKPI WHERE userid = 667-- AND Timespent > 100 
+ORDER BY Date desc
+
+SELECT * FROM Biz_UserWeekKPI WHERE userid = 667-- AND Timespent > 100 
+--ORDER BY Date desc
+
+SELECT * FROM VISITS WHERE USERID = 667 AND StartDAte > '23Mar16'

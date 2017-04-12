@@ -1,0 +1,8 @@
+
+SELECT * FROM WF_TaskDetail WHERE TaskheadID IN (SELECT taskheadID FROM WF_TaskDetail WHERE status = 0 GROUP BY taskheadID HAVING COUNT(*) >1
+) --AND StepID = 3
+
+--UPDATE WF_TaskDetail SET status = 2 WHERE TaskheadID IN (SELECT taskheadID FROM WF_TaskDetail 
+--WHERE status = 0 GROUP BY taskheadID HAVING COUNT(*) >1) AND DetailNo = 5
+
+SELECT * FROM WF_TASKDETAIL WHERE TASKHEADID = 'C1CDA079-3E51-4BFB-BCA8-B840FE92FE13'

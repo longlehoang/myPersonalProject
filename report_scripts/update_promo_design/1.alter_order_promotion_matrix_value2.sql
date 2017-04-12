@@ -1,0 +1,1 @@
+ALTER TABLE order_promotion_matrixvalue ADD [REC_TIME_STAMP] DATETIME NULL;

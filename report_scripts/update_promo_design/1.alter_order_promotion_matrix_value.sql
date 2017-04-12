@@ -1,0 +1,1 @@
+ALTER TABLE order_promotion_matrixvalue ADD [VOLUME_PromotionID] [nvarchar](50) NULL, [SKU_PromotionID] [nvarchar](50) NULL ;

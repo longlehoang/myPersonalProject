@@ -1,0 +1,3 @@
+SELECT o.OrgCode, o.OrgName, c.Code, LTRIM(RTRIM(replace(REPLACE(REPLACE(C.Name, CHAR(13), ''), CHAR(10), ''),',',';'))) CustomerName
+, LTRIM(RTRIM(replace(REPLACE(REPLACE(c.address_line, CHAR(13), ''), CHAR(10), ''),',',';'))) CustomerAddress, c.ContactTel, c.ContactMobile, c.identity1, c.identity2, TradeChannel, SubTRadeChannel, Customer_TYpe, CustomerCategory  FROM customers c JOIN organization o ON o.orgid = c.org_id WHERE c.ID IN (SELECT customer_id FROM ROUTE_CUSTOMERS WHERE ROUTE_NUMBER = 3 AND VALID = 1)
+AND valid = 1

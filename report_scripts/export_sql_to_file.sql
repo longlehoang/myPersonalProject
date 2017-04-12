@@ -1,0 +1,1 @@
+EXEC  master..xp_cmdshell 'SQLCMD -S C:\Program Files\Microsoft SQL Server\100\Tools\Binn -E -Q "SELECTsdfsdfds TOP 10 * FROM CCVN4_Reporting.dbo.customers ORDER BY send_request_date desc" -b -o D:\myoutput.csv', no_output
